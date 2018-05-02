@@ -5,8 +5,8 @@
     <feature manual="selected" name="Linux"/>
     <feature automatic="unselected" name="Win"/>
     <feature automatic="selected" name="Locale"/>
-    <feature manual="selected" name="En"/>
-    <feature automatic="unselected" name="De"/>
+    <feature automatic="unselected" name="En"/>
+    <feature manual="selected" name="De"/>
     <feature automatic="unselected" name="Ch"/>
     <feature automatic="selected" name="Voice"/>
     <feature manual="selected" name="Male"/>

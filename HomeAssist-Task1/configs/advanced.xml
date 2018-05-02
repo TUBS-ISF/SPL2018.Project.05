@@ -5,14 +5,26 @@
     <feature manual="selected" name="Linux"/>
     <feature automatic="unselected" name="Win"/>
     <feature automatic="selected" name="Locale"/>
-    <feature manual="selected" name="En"/>
-    <feature automatic="unselected" name="De"/>
+    <feature automatic="unselected" name="En"/>
+    <feature manual="selected" name="De"/>
     <feature automatic="unselected" name="Ch"/>
     <feature automatic="selected" name="Voice"/>
     <feature manual="selected" name="Male"/>
     <feature automatic="unselected" name="Female"/>
+    <feature automatic="selected" name="Visual"/>
+    <feature manual="selected" name="Touchscreen"/>
+    <feature automatic="selected" name="Projection"/>
+    <feature manual="selected" name="2D"/>
     <feature automatic="selected" name="Mobility"/>
     <feature manual="selected" name="Stationary"/>
     <feature automatic="unselected" name="Wheeled"/>
     <feature automatic="unselected" name="Legged"/>
+    <feature automatic="selected" name="Extensibility"/>
+    <feature automatic="selected" name="Protocol"/>
+    <feature manual="selected" name="Bluetooth"/>
+    <feature automatic="selected" name="Platform"/>
+    <feature manual="selected" name="ThinQ"/>
+    <feature automatic="selected" name="Internet"/>
+    <feature manual="selected" name="Telecommunication"/>
+    <feature manual="selected" name="Monitor"/>
 </configuration>
