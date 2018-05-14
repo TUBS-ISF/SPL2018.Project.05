@@ -1,6 +1,9 @@
 # Compiled class file
 *.class
 
+# featureIDE
+/*/.featureide/
+
 # Log file
 *.log
 .DS_Store
