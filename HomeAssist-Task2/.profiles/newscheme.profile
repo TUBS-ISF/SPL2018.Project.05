@@ -1,0 +1,10 @@
+true
+Locale=Orange
+De=Red
+Ch=Red
+Stationary=Pink
+Legged=Pink
+Mobility=Blue
+En=Red
+Visual=Yellow
+Wheeled=Pink

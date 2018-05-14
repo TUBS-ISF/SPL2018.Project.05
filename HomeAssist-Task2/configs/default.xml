@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<configuration>
+    <feature automatic="selected" name="HomeAssist"/>
+    <feature automatic="selected" name="OS"/>
+    <feature manual="selected" name="Linux"/>
+    <feature automatic="unselected" name="Win"/>
+    <feature automatic="selected" name="Locale"/>
+    <feature manual="selected" name="En"/>
+    <feature automatic="unselected" name="De"/>
+    <feature automatic="unselected" name="Ch"/>
+    <feature automatic="selected" name="Voice"/>
+    <feature manual="selected" name="Male"/>
+    <feature automatic="unselected" name="Female"/>
+    <feature automatic="selected" name="Mobility"/>
+    <feature manual="selected" name="Stationary"/>
+    <feature automatic="unselected" name="Wheeled"/>
+    <feature automatic="unselected" name="Legged"/>
+</configuration>
