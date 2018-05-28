@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<featureModel>
+    <properties/>
+    <struct>
+        <and abstract="true" mandatory="true" name="HomeAssist">
+            <description>
+a device used at home as an assistant
+</description>
+            <alt abstract="true" mandatory="true" name="OS">
+                <description>
+Operating System
+</description>
+                <feature abstract="true" name="Linux">
+                    <description>
+an OS
+</description>
+                </feature>
+                <feature abstract="true" name="Win">
+                    <description>
+Windows, an OS
+</description>
+                </feature>
+            </alt>
+            <alt mandatory="true" name="Locale">
+                <description>
+a set of parameters that defines the user's language, region and any special variant preferences that the user wants to see in their user interface.
+</description>
+                <feature name="En">
+                    <description>
+English
+</description>
+                </feature>
+                <feature name="De">
+                    <description>
+Deutsch
+</description>
+                </feature>
+                <feature name="Ch">
+                    <description>
+Chinese
+</description>
+                </feature>
+            </alt>
+            <alt abstract="true" mandatory="true" name="Voice">
+                <description>
+used to interact with people in human language
+</description>
+                <feature abstract="true" name="Male">
+                    <description>
+voice of a man
+</description>
+                </feature>
+                <feature abstract="true" name="Female">
+                    <description>
+voice of a woman
+</description>
+                </feature>
+            </alt>
+            <and name="Visual">
+                <description>
+visual interface, e.g. a screen
+</description>
+                <feature abstract="true" name="Touchscreen">
+                    <description>
+operation can be done directly on the screen
+</description>
+                </feature>
+                <or abstract="true" name="Projection">
+                    <description>
+image will be projected.
+</description>
+                    <feature abstract="true" name="2D">
+                        <description>
+2D image will be projected.
+</description>
+                    </feature>
+                    <feature abstract="true" name="3D">
+                        <description>
+3D image will be projected.
+</description>
+                    </feature>
+                </or>
+            </and>
+            <alt abstract="true" mandatory="true" name="Mobility">
+                <description>
+the move ability of the device
+</description>
+                <feature name="Stationary">
+                    <description>
+the device can NOT be moved.
+</description>
+                </feature>
+                <feature name="Wheeled">
+                    <description>
+the device can move via a wheel.
+</description>
+                </feature>
+                <feature name="Legged">
+                    <description>
+the device can move via mechanical legs.
+</description>
+                </feature>
+            </alt>
+            <feature name="Activity">
+                <description>
+the device has mechanical arms or hands.
+</description>
+            </feature>
+            <and abstract="true" name="Extensibility">
+                <description>
+the device can be connected with other devices.
+</description>
+                <and abstract="true" name="Protocol">
+                    <description>
+communication protocols used to connect other devices
+</description>
+                    <feature abstract="true" name="Zigbee">
+                        <description>
+a wireless protocol
+</description>
+                    </feature>
+                    <feature abstract="true" name="Bluetooth">
+                        <description>
+a wireless protocol
+</description>
+                    </feature>
+                </and>
+                <and abstract="true" name="Platform">
+                    <description>
+provide services by connecting and controlling smart devices.
+</description>
+                    <feature abstract="true" name="ThinQ">
+                        <description>
+a platform from LG
+</description>
+                    </feature>
+                    <feature abstract="true" name="SmartThings">
+                        <description>
+a platform from Samsung
+</description>
+                    </feature>
+                    <feature abstract="true" name="Uplus">
+                        <description>
+a platform from Haier
+</description>
+                    </feature>
+                </and>
+            </and>
+            <and abstract="true" name="Internet">
+                <description>
+network
+</description>
+                <feature abstract="true" name="Telecommunication">
+                    <description>
+communication between home and another remote terminal
+</description>
+                </feature>
+                <feature abstract="true" name="Monitor">
+                    <description>
+check status of all connected devices at home.
+</description>
+                </feature>
+                <feature abstract="true" name="Control">
+                    <description>
+control all connected devices at home.
+</description>
+                </feature>
+            </and>
+        </and>
+    </struct>
+    <constraints/>
+    <calculations Auto="true" Constraints="true" Features="true" Redundant="true" Tautology="true"/>
+    <comments/>
+    <featureOrder userDefined="false"/>
+</featureModel>
