@@ -1,3 +1,4 @@
+import java.awt.Point;
 import java.util.Locale;
 import java.util.ResourceBundle;
 
@@ -8,8 +9,10 @@ import locale.DePackage;
 import locale.EnPackage;
 import locale.ZhPackage;
 import mobility.MobilityManagement;
+import monitor.Monitor;
 import plugindef.portActivity;
 import plugindef.portLocale;
+import plugindef.portMonitor;
 import plugindef.portOS;
 import plugindef.portVisual;
 import visual.Visual;
@@ -39,6 +42,7 @@ public class Main {
 	private static portLocale localeObj;
 	private static portVisual visualObj;
 	private static portActivity actObj;
+	private static portMonitor monObj;
 	
 	
 	/* Main */
@@ -101,6 +105,8 @@ public class Main {
 		
 		CommandLoop tdCmd = new CommandLoop();
 		tdCmd.start();
+		
+		/* Server start ? */
 			
 		/* Visual */
 		if(visualObj != null) {
@@ -140,6 +146,11 @@ public class Main {
 		/* ActivityControl */
 		actObj = ActivityControl.load();
 		if(actObj != null) System.out.println(actObj.getDescription());
+		
+		/* Monitor */
+		// *** http://localhost:8080/status *** ///
+		monObj = Monitor.load(actObj);
+		if(monObj != null) System.out.println(monObj.getDescription());
 		
 		
 		System.out.println("*** End of loading Plug-ins ***");
