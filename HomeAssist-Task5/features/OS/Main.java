@@ -37,6 +37,10 @@ public class Main {
 		
 		runVisual();
 		
+		/* Internet */
+		// *** http://localhost:8080/ *** ///
+		runNetServer();
+		
 		/* Monitor */
 		// *** http://localhost:8080/status *** ///
 		runMonitor();
@@ -97,6 +101,9 @@ public class Main {
 	
 	
 	private static void runVisual() {
+	}
+	
+	private static void runNetServer() {
 	}
 	
 	private static void runMonitor() {
